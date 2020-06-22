@@ -1,7 +1,7 @@
 # 重回帰バージョン
 import numpy as np
 
-n = 100
+n = 10
 p = 2
 beta = np.array([1, 2, 3])
 x = np.random.randn(n, 2)
