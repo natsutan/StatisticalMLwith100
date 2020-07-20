@@ -19,6 +19,9 @@ alpha = 0.05
 
 def f(x, a):
     x = np.array([1, x])
+    tmp1 = x@U
+    tmp2 = tmp1@x.T
+
     r = stats.t.ppf(0.975, df=N-p-1) * RSE *np.sqrt(a+x@U@x.T)
     lower = x@beta_hat - r
     upper = x@beta_hat + r

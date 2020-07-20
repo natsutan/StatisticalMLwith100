@@ -6,6 +6,8 @@ let N = 100
 let LRrun = false
 let NErun = false
 let C2run = false
+let STrun = false
+
 
 [<EntryPoint>]
 let main argv = 
@@ -26,7 +28,17 @@ let main argv =
         chisquares.plot_chi2(path) |> ignore
         printf "chi2"
 
-    student_t.plot_student_t(path)
+    if STrun then
+        student_t.plot_student_t(path) |> ignore
+        printf "t"
+
+    let xs, ys = Confidence.makeData N
+    let p = 1
+
+    let beta_hat, U = Confidence.fit(xs, ys)
+    let RSE = Confidence.RSE(xs, ys, beta_hat, N, p)
+    Confidence.plot(path, beta_hat, U, 0.95, RSE, N, p) |> ignore
+    
 
     0 // return an integer exit code
 
