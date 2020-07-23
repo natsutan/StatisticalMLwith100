@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chap1", "chap1", "{4D2EEF0C
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LinearRegression", "..\chap1\LinearRegression\LinearRegression.fsproj", "{8A54E444-F537-4A46-8D44-E0488F7B3D02}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chap2", "chap2", "{52DE9B24-A2AF-4FC8-A81B-5190AAA9604F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "classification", "..\classification\classification.fsproj", "{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,17 @@ Global
 		{8A54E444-F537-4A46-8D44-E0488F7B3D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A54E444-F537-4A46-8D44-E0488F7B3D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A54E444-F537-4A46-8D44-E0488F7B3D02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8A54E444-F537-4A46-8D44-E0488F7B3D02} = {4D2EEF0C-410B-458E-A4C9-6B6202D041B0}
+		{FD25B649-EB1A-4E03-AC9F-3340E8CA96A2} = {52DE9B24-A2AF-4FC8-A81B-5190AAA9604F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7C3FDD39-E3E6-48C4-9935-EEDF358B13C1}
